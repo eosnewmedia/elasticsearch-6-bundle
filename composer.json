@@ -1,0 +1,27 @@
+{
+  "name": "enm/elasticsearch-6-bundle",
+  "description": "Symfony integration for enm/elasticsearch-6",
+  "type": "symfony-bundle",
+  "autoload": {
+    "psr-4": {
+      "Enm\\Bundle\\Elasticsearch\\": "src"
+    }
+  },
+  "require": {
+    "php": "^7.2",
+    "symfony/framework-bundle": "^4.0",
+    "symfony/console": "^4.0",
+    "enm/elasticsearch-6": "^1.0"
+  },
+  "conflict": {
+    "enm/elasticsearch-5-bundle": "*"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Philipp Marien",
+      "email": "marien@eosnewmedia.de"
+    }
+  ],
+  "minimum-stability": "stable"
+}
