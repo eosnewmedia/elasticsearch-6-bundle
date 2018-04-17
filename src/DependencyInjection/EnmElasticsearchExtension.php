@@ -20,7 +20,7 @@ class EnmElasticsearchExtension extends ConfigurableExtension
      * @param ContainerBuilder $container
      * @throws \Exception
      */
-    protected function loadInternal(array $mergedConfig, ContainerBuilder $container)
+    protected function loadInternal(array $mergedConfig, ContainerBuilder $container): void
     {
         $container->autowire(DocumentManager::class)
             ->addArgument($mergedConfig['index'])
@@ -54,6 +54,16 @@ class EnmElasticsearchExtension extends ConfigurableExtension
                 [
                     $className,
                     (array)$settings
+                ]
+            );
+        }
+
+        foreach ((array)$mergedConfig['pipelines'] as $className => $pipeline) {
+            $container->getDefinition(DocumentManager::class)->addMethodCall(
+                'registerPipeline',
+                [
+                    $className,
+                    (array)$pipeline
                 ]
             );
         }

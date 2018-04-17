@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9efa707d521584ec9987bac612afcc75",
+    "content-hash": "3ea4842bc75b1ffe66be7c76902f3dd9",
     "packages": [
         {
             "name": "elasticsearch/elasticsearch",
@@ -65,16 +65,16 @@
         },
         {
             "name": "enm/elasticsearch-6",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eosnewmedia/elasticsearch-6.git",
-                "reference": "7c3980816a286785579f57cc87f8888e62bebeda"
+                "reference": "b322058caa30ecd2f636458aaabff404d44ef67e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eosnewmedia/elasticsearch-6/zipball/7c3980816a286785579f57cc87f8888e62bebeda",
-                "reference": "7c3980816a286785579f57cc87f8888e62bebeda",
+                "url": "https://api.github.com/repos/eosnewmedia/elasticsearch-6/zipball/b322058caa30ecd2f636458aaabff404d44ef67e",
+                "reference": "b322058caa30ecd2f636458aaabff404d44ef67e",
                 "shasum": ""
             },
             "require": {
@@ -102,7 +102,7 @@
                 }
             ],
             "description": "Elasticsearch 6.x Client (low-level)",
-            "time": "2018-04-16T15:38:13+00:00"
+            "time": "2018-04-17T08:00:24+00:00"
         },
         {
             "name": "guzzlehttp/ringphp",
