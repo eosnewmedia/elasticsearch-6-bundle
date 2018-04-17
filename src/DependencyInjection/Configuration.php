@@ -38,6 +38,13 @@ class Configuration implements ConfigurationInterface
             ->useAttributeAsKey('className')
             ->variablePrototype();
 
+        $pipeline = $root->arrayNode('pipelines')
+            ->useAttributeAsKey('className')
+            ->arrayPrototype()
+            ->children();
+        $pipeline->scalarNode('description')->isRequired();
+        $pipeline->arrayNode('processors')->variablePrototype();
+
         return $treeBuilder;
     }
 }

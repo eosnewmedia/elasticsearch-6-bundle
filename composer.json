@@ -11,7 +11,7 @@
     "php": "^7.2",
     "symfony/framework-bundle": "^4.0",
     "symfony/console": "^4.0",
-    "enm/elasticsearch-6": "^1.0"
+    "enm/elasticsearch-6": "^1.1"
   },
   "conflict": {
     "enm/elasticsearch-5-bundle": "*"
